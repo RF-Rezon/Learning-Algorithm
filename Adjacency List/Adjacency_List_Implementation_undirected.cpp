@@ -8,7 +8,7 @@ int main()
 
     vector<int> adj_list[n]; // Array banalam jar protiti ghore vector thakbe ja abr ekadhik man songrokkhon korte pare.
 
-    while (e--) // Jotogula adge, totobar loop cole.
+    while (e--) // Jotogula adge, totobar loop colbe.
     {
         int a, b;
         cin >> a >> b;
