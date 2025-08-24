@@ -35,7 +35,7 @@ int main()
     int n, e; // node, edge
     cin >> n >> e;
 
-    while (e--) // Jotogula adge, totobar loop colbe.
+    while (e--) // Jotogula edge, totobar loop colbe.
     {
         int a, b;
         cin >> a >> b;
