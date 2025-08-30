@@ -13,7 +13,7 @@ bool valid(int i, int j)
     return true;
 }
 
-void bfs(int si, int sj)
+void dfs(int si, int sj)
 {
     cout << si << " " << sj << endl;
     visited[si][sj] = true;
@@ -23,7 +23,7 @@ void bfs(int si, int sj)
         ci = si + d[i].first;
         cj = sj + d[i].second;
         if (valid(ci, cj) && !visited[ci][cj])
-            bfs(ci, cj);
+            dfs(ci, cj);
     }
 }
 
@@ -40,6 +40,6 @@ int main()
     int si, sj;
     cin >> si >> sj;
     memset(visited, false, sizeof(visited));
-    bfs(si, sj);
+    dfs(si, sj);
     return 0;
 }
